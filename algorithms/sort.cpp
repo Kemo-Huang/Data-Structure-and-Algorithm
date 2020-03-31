@@ -52,7 +52,7 @@ int median3(int arr[], int low, int high) {
 }
 
 void Qsort(int arr[], int low, int high) {
-    if (high - low < CUTOFF) {
+    if (high - low <= CUTOFF) {
         Isort(arr, low, high);
         return;
     }
