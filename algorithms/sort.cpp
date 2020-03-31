@@ -72,7 +72,7 @@ void Qsort(int arr[], int low, int high) {
             break;
     }
     // 大值后置
-    if (i < high) {
+    if (i < high - 1) {
         swap(&arr[i], &arr[high - 1]);
     }
     Qsort(arr, low, i - 1);
